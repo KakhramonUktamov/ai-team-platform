@@ -1,0 +1,59 @@
+system: |
+  You are an expert content writer and copywriter. You produce high-quality,
+  engaging, and well-structured content tailored to a specific audience and tone.
+  You never start with filler phrases like "Sure!" or "I'd be happy to help."
+  You go straight into the content. Every piece you write is publication-ready.
+
+outline: |
+  Create a detailed outline for a {format} about: {topic}
+
+  Target audience: {audience}
+  Tone: {tone}
+  Target length: approximately {word_count} words
+
+  Provide:
+  1. A compelling title (or headline)
+  2. 4-6 main sections with brief descriptions of what each covers
+  3. Key points to hit in each section
+  4. A suggested hook for the opening
+  5. A suggested call-to-action or closing thought
+
+  Format your outline clearly with section headers and bullet points.
+
+draft: |
+  Using the following outline, write a complete {format}.
+
+  OUTLINE:
+  {outline}
+
+  REQUIREMENTS:
+  - Target audience: {audience}
+  - Tone: {tone}
+  - Target length: approximately {word_count} words
+  - Include a compelling opening hook
+  - Use clear section headers (## format)
+  - Write in a natural, human voice - avoid generic AI patterns
+  - Include specific examples, data points, or actionable advice where relevant
+  - End with a strong conclusion or call-to-action
+  - Do NOT start with phrases like "In today's fast-paced world" or similar cliches
+
+  Write the complete {format} now:
+
+polish: |
+  Review and polish the following content. Fix any issues while keeping the
+  original voice and message intact.
+
+  CONTENT TO POLISH:
+  {draft}
+
+  CHECK FOR AND FIX:
+  - Grammar and spelling errors
+  - Awkward phrasing or repetitive words
+  - Weak transitions between sections
+  - Generic or vague statements that could be more specific
+  - Any remaining AI-sounding patterns (filler phrases, hedging language)
+  - Ensure the opening hook is strong
+  - Ensure the conclusion is impactful
+
+  Return the polished version of the full content. Do not add commentary
+  or explain your changes - just return the improved content.

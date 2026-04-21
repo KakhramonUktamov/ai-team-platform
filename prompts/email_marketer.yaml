@@ -1,0 +1,111 @@
+system: |
+  You are an expert email marketing strategist and copywriter. You create
+  high-converting email sequences that drive engagement, clicks, and conversions.
+  You understand email deliverability best practices, subject line psychology,
+  and persuasive writing techniques.
+  You never start with filler phrases. You produce ready-to-send emails.
+  Each email you write has a clear purpose, compelling subject line, and strong CTA.
+
+sequence_plan: |
+  Plan an email sequence for the following campaign:
+
+  Product/Service: {product}
+  Campaign Goal: {goal}
+  Target Segment: {segment}
+  Number of Emails: {email_count}
+  Brand Voice: {brand_voice}
+
+  For each email in the sequence, provide:
+  1. Email number and send timing (e.g., "Email 1 — Day 0 (immediately after signup)")
+  2. Purpose of this email (welcome, educate, social proof, urgency, etc.)
+  3. Key message / angle
+  4. Primary CTA
+
+  Think about the psychological journey: awareness → interest → desire → action.
+  Space emails logically. Don't overwhelm early, build momentum.
+
+email_draft: |
+  Write the complete email based on this plan:
+
+  CAMPAIGN CONTEXT:
+  Product/Service: {product}
+  Campaign Goal: {goal}
+  Target Segment: {segment}
+  Brand Voice: {brand_voice}
+
+  EMAIL PLAN:
+  {email_plan}
+
+  REQUIREMENTS:
+  - Write a compelling subject line (and one A/B variant)
+  - Preview text (the snippet shown in inbox, 40-90 chars)
+  - Email body with clear structure: hook → value → CTA
+  - Keep paragraphs short (2-3 sentences max)
+  - Include exactly one primary CTA button text
+  - Personalization tokens: use {{{{first_name}}}} where appropriate
+  - Tone must match the brand voice specified
+  - Do NOT use generic openers like "I hope this email finds you well"
+
+  Format the output exactly as:
+
+  SUBJECT: [main subject line]
+  SUBJECT B: [A/B variant]
+  PREVIEW: [preview text]
+
+  [email body here]
+
+  CTA: [button text]
+
+full_sequence: |
+  Write all {email_count} emails for this campaign as a complete sequence.
+
+  CAMPAIGN CONTEXT:
+  Product/Service: {product}
+  Campaign Goal: {goal}
+  Target Segment: {segment}
+  Brand Voice: {brand_voice}
+
+  SEQUENCE PLAN:
+  {sequence_plan}
+
+  For EACH email, format exactly as:
+
+  ---
+  EMAIL [number] — [send timing]
+  SUBJECT: [main subject line]
+  SUBJECT B: [A/B variant]
+  PREVIEW: [preview text]
+
+  [email body]
+
+  CTA: [button text]
+  ---
+
+  REQUIREMENTS:
+  - Each email should be 100-200 words in body
+  - Vary the angles: don't repeat the same approach
+  - Build momentum across the sequence
+  - Use {{{{first_name}}}} for personalization
+  - Include social proof in at least one email
+  - Create urgency in the final 1-2 emails
+  - Every email has exactly one clear CTA
+  - Match the brand voice consistently
+
+polish: |
+  Review and polish the following email sequence. Fix any issues while
+  keeping the brand voice consistent throughout.
+
+  SEQUENCE:
+  {draft}
+
+  CHECK FOR AND FIX:
+  - Subject lines: are they compelling, under 50 chars, no spam triggers?
+  - Preview text: does it complement (not repeat) the subject line?
+  - Opening lines: do they hook immediately? Remove any generic openers.
+  - CTA clarity: is each CTA action-oriented and specific?
+  - Sequence flow: does momentum build across emails?
+  - Personalization: is {{{{first_name}}}} used naturally (not forced)?
+  - Spam triggers: remove words like FREE, GUARANTEED, ACT NOW in all caps
+  - Tone consistency: does every email sound like the same brand?
+
+  Return the polished complete sequence in the same format.

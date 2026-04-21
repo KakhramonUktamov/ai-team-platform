@@ -1,0 +1,112 @@
+system: |
+  You are an expert SEO strategist and content optimizer. You analyze content
+  for search engine optimization and provide actionable recommendations.
+  You understand on-page SEO, keyword strategy, content structure, meta tags,
+  internal linking, and search intent matching.
+  You provide specific, data-driven advice — never vague generalities.
+  Format all output in clean markdown with clear sections.
+
+keyword_analysis: |
+  Perform a keyword analysis for the following topic and target keywords.
+
+  TARGET KEYWORDS: {keywords}
+  TOPIC/NICHE: {topic}
+  TARGET AUDIENCE: {audience}
+
+  Provide:
+  1. PRIMARY KEYWORD — the single best keyword to target (highest value + achievable)
+  2. SECONDARY KEYWORDS (3-5) — supporting keywords to weave into the content
+  3. LONG-TAIL VARIATIONS (5-8) — specific phrases people actually search
+  4. SEARCH INTENT — what the searcher wants (informational, transactional, navigational)
+  5. CONTENT ANGLE — the best angle to satisfy this search intent
+  6. COMPETITOR GAPS — what existing top results likely miss that you can cover
+  7. SUGGESTED TITLE — an SEO-optimized title (under 60 characters, keyword near front)
+  8. SUGGESTED META DESCRIPTION — compelling description (under 155 characters)
+
+  Be specific. Use actual keyword variations, not generic advice.
+
+content_audit: |
+  Perform a detailed SEO audit of the following content.
+
+  TARGET KEYWORDS: {keywords}
+  CONTENT TO AUDIT:
+  {content}
+
+  Score each area 1-10 and provide specific fixes:
+
+  1. KEYWORD OPTIMIZATION
+     - Is the primary keyword in the title, H1, first 100 words, and conclusion?
+     - Keyword density (aim for 1-2%)
+     - Are secondary keywords naturally included?
+
+  2. CONTENT STRUCTURE
+     - Does it have a clear H1 > H2 > H3 hierarchy?
+     - Are paragraphs short (under 3 sentences)?
+     - Does it use bullet points and numbered lists?
+
+  3. TITLE TAG & META
+     - Is the title under 60 characters with keyword near front?
+     - Is there a compelling meta description under 155 characters?
+
+  4. READABILITY
+     - Flesch reading score estimate
+     - Sentence length variety
+     - Use of transition words
+
+  5. CONTENT DEPTH
+     - Does it fully answer the search intent?
+     - Are there gaps that competitors might cover better?
+     - Is there unique value (data, examples, expert insights)?
+
+  6. INTERNAL LINKING OPPORTUNITIES
+     - Suggest 3-5 internal link anchor texts and target topics
+
+  7. OVERALL SEO SCORE: X/100
+     - Top 3 quick wins (changes that will have the biggest impact)
+     - Top 3 long-term improvements
+
+meta_generator: |
+  Generate optimized meta tags for the following content.
+
+  TARGET KEYWORDS: {keywords}
+  CONTENT:
+  {content}
+
+  Generate:
+  1. TITLE TAG — under 60 characters, primary keyword near front, compelling
+     Provide 3 variants to choose from.
+
+  2. META DESCRIPTION — under 155 characters, includes keyword, has clear CTA
+     Provide 3 variants to choose from.
+
+  3. H1 TAG — may differ slightly from title tag, clear and descriptive
+
+  4. URL SLUG — lowercase, hyphens, 3-5 words, includes primary keyword
+
+  5. OPEN GRAPH TITLE — can be slightly longer/different from title tag
+
+  6. OPEN GRAPH DESCRIPTION — optimized for social sharing (under 200 chars)
+
+  7. SCHEMA MARKUP SUGGESTION — which schema type fits this content
+     (Article, HowTo, FAQ, Product, etc.)
+
+optimize_content: |
+  Rewrite and optimize the following content for SEO based on these keywords.
+
+  TARGET KEYWORDS: {keywords}
+  ORIGINAL CONTENT:
+  {content}
+
+  OPTIMIZATION RULES:
+  - Place primary keyword in the first sentence naturally
+  - Use H2 and H3 headers that include secondary keywords
+  - Add keyword variations throughout (avoid stuffing)
+  - Keep paragraphs to 2-3 sentences max
+  - Add a compelling introduction that addresses search intent
+  - Add a conclusion with a clear next step or CTA
+  - Suggest where to add internal links with [INTERNAL LINK: anchor text -> topic]
+  - Add an FAQ section at the end with 3-5 questions (for featured snippet potential)
+  - Maintain the original voice and message
+  - Target readability: 8th grade level
+
+  Return the fully optimized content in markdown format.

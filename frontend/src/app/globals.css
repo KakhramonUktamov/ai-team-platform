@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-surface-50 text-zinc-800 antialiased; }
+.prose h1 { @apply text-2xl font-bold mt-6 mb-3; }
+.prose h2 { @apply text-xl font-semibold mt-5 mb-2; }
+.prose h3 { @apply text-lg font-medium mt-4 mb-2; }
+.prose p { @apply mb-3 leading-relaxed; }
+.prose ul { @apply list-disc pl-6 mb-3; }
+.prose ol { @apply list-decimal pl-6 mb-3; }
+.prose li { @apply mb-1; }
+.prose code { @apply bg-surface-100 px-1.5 py-0.5 rounded text-sm font-mono; }
+.prose pre { @apply bg-zinc-900 text-zinc-100 p-4 rounded-lg overflow-x-auto text-sm mb-4; }
+.prose blockquote { @apply border-l-4 border-brand-400 pl-4 italic text-zinc-600; }
+.prose hr { @apply my-6 border-surface-200; }
